@@ -8,7 +8,7 @@ class CpuRequirement < Requirement
     end
   end
 
-class Aarch64LinuxGnu < Formula
+class Aarch64LinuxGnuAT850Glibc228 < Formula
     desc "aarch64 Linux GNU Toolchain"
     homepage "https://github.com/bytecellar/homebrew-macos-cross-toolchains"
     license "GPL-3.0-or-later" => { with: "GCC-exception-3.1" }
