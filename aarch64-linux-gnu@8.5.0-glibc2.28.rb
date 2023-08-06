@@ -1,3 +1,13 @@
+class CpuRequirement < Requirement
+    fatal true
+  
+    satisfy() { Hardware::CPU.arm? }
+  
+    def message
+      "Only apple m1/m2 supported!"
+    end
+  end
+
 class Aarch64LinuxGnu < Formula
     desc "aarch64 Linux GNU Toolchain"
     homepage "https://github.com/bytecellar/homebrew-macos-cross-toolchains"
@@ -6,7 +16,7 @@ class Aarch64LinuxGnu < Formula
     revision 1
 
     on_macos do
-        depends_on Hardware::CPU.arm?
+        depends_on CpuRequirement
     end
   
     url "https://github.com/bytecellar/homebrew-macos-cross-toolchains/releases/download/v8.5.0-glibc2.28/aarch64-linux-gnu-aarch64-darwin.tar.gz"
