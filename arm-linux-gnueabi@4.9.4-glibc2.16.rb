@@ -8,19 +8,19 @@ class CpuRequirement < Requirement
     end
   end
 
-class Aarch64LinuxGnuAT850Glibc228 < Formula
+class ArmLinuxGnueabiAT494Glibc216 < Formula
     desc "aarch64 Linux GNU Toolchain"
     homepage "https://github.com/nexbeam/homebrew-macos-cross-toolchains"
     license "GPL-3.0-or-later" => { with: "GCC-exception-3.1" }
-    version "8.5.0"
+    version "4.9.4"
     revision 1
 
     on_macos do
         depends_on CpuRequirement
     end
   
-    url "https://github.com/nexbeam/homebrew-macos-cross-toolchains/releases/download/v8.5.0-glibc2.28/aarch64-linux-gnu-aarch64-darwin.tar.gz"
-    sha256 "45be5efafe5504be307101360e631c1f4000e50af4e8d93fa01f8f59fa3bfce8"
+    url "https://github.com/nexbeam/homebrew-macos-cross-toolchains/releases/download/v4.9.4-glibc2.16/arm-linux-gnueabi-aarch64-darwin.tar.gz"
+    sha256 "86f7fac6613a1a2abe3c60694ceccacad5745ba042bafd25d834407fbda95e65"
   
     def install
       (prefix/"toolchain").install Dir["./*"]
