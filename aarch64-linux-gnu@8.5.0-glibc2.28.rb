@@ -20,7 +20,7 @@ class Aarch64LinuxGnuAT850Glibc228 < Formula
     end
   
     url "https://github.com/nexbeam/homebrew-macos-cross-toolchains/releases/download/v8.5.0-glibc2.28/aarch64-linux-gnu-aarch64-darwin.tar.gz"
-    sha256 "45be5efafe5504be307101360e631c1f4000e50af4e8d93fa01f8f59fa3bfce8"
+    sha256 "bd4d4b7c494e359d3f9d8ccfb98755cee27565b234ccb847b8ef15be441c0b09"
   
     def install
       (prefix/"toolchain").install Dir["./*"]
