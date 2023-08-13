@@ -23,7 +23,7 @@ class ArmLinuxGnueabiAT494Glibc216 < Formula
     sha256 "86f7fac6613a1a2abe3c60694ceccacad5745ba042bafd25d834407fbda95e65"
   
     def install
-      (prefix/"toolchain").install Dir["./*"]
-      Dir.glob(prefix/"toolchain/bin/*") {|file| bin.install_symlink file}
+      (prefix).install Dir["./*"]
+      bin.install_symlink Dir["bin/*"]
     end
   end
