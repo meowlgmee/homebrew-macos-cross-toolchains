@@ -23,7 +23,7 @@ class Aarch64LinuxGnuAT850Glibc228 < Formula
     sha256 "bd4d4b7c494e359d3f9d8ccfb98755cee27565b234ccb847b8ef15be441c0b09"
   
     def install
-      (prefix/"toolchain").install Dir["./*"]
-      Dir.glob(prefix/"toolchain/bin/*") {|file| bin.install_symlink file}
+      (prefix).install Dir["./*"]
+      bin.install_symlink Dir["bin/*"]
     end
   end
