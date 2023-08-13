@@ -24,6 +24,6 @@ class Aarch64LinuxGnuAT850Glibc228 < Formula
   
     def install
       (prefix).install Dir["./*"]
-      bin.install_symlink Dir["bin/*"]
+      Dir.glob(prefix/"bin/*") {|file| bin.install_symlink file}
     end
   end
