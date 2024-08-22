@@ -8,19 +8,19 @@ class CpuRequirement < Requirement
     end
   end
 
-class Aarch64LinuxGnuAT850Glibc228 < Formula
+class Aarch64LinuxGnuAT750Glibc227 < Formula
     desc "aarch64 Linux GNU Toolchain"
     homepage "https://github.com/meowlgmee/homebrew-macos-cross-toolchains"
     license "GPL-3.0-or-later" => { with: "GCC-exception-3.1" }
-    version "8.5.0"
+    version "7.5.0"
     revision 1
 
     on_macos do
         depends_on CpuRequirement
     end
   
-    url "https://github.com/meowlgmee/homebrew-macos-cross-toolchains/releases/download/v8.5.0-glibc2.28/aarch64-linux-gnu-aarch64-darwin.tar.gz"
-    sha256 "bd4d4b7c494e359d3f9d8ccfb98755cee27565b234ccb847b8ef15be441c0b09"
+    url "https://github.com/meowlgmee/homebrew-macos-cross-toolchains/releases/download/v7.5.0-glibc2.27/aarch64-linux-gnu-aarch64-darwin.tar.gz"
+    sha256 "1a4b06a53139ba65930a778d66a7f885d52f4ddc739c99fb6c6febc9a3f18163"
   
     def install
       (prefix/"toolchain").install Dir["./*"]
