@@ -1,0 +1,349 @@
+0 version reference
+================================================================================================================
+https://abi-laboratory.pro/?view=timeline&l=glibc
+https://wiki.osdev.org/Cross-Compiler_Successful_Builds
+https://stackoverflow.com/questions/35873558/glibc-vs-gcc-vs-binutils-compatibility
+so find the version of gcc you want, then find its release date, then look at the glibc releases from around the same time.
+
+http://udn.realityripple.com/docs/Mozilla/Firefox/Linux_compatibility_matrix
+Distribution	kernel	glibc	glib	gtk+2	gtk+3	pixman	stdc++	GCC	clang	python3	Released	EOL
+Fedora 16	3.1	2.14	2.30	2.24	3.2	0.22	4.6	4.6	2.9	N/A	Nov 2011	Feb 2013
+Fedora 17	3.3	2.15	2.32	2.24	3.4	0.24	4.7	4.7	3.0	N/A	May 2012	Jul 2013
+Fedora 18	3.6	2.16	2.34	2.24	3.6	0.26	4.7	4.7	3.1	N/A	Jan 2013	Jan 2014
+Fedora 19	3.9	2.17	2.36	2.24	3.8	0.30	4.8.1	4.8	3.3	N/A	Jul 2013	Jan 2015
+Fedora 20	3.11	2.18	2.38	2.24	3.10	0.30	4.8.2	4.8	3.3	N/A	Dec 2013	Jun 2015
+Fedora 21	3.17	2.20	2.42	2.24	3.14	0.32	4.9	4.9	3.4	N/A	Dec 2014	Dec 2015
+Fedora 22	4.0	2.21	2.44	2.24	3.16	0.32	5.1	4.9, 5.1	3.5	N/A	May 2015	Jul 2016
+Fedora 23	4.2	2.22	2.46	2.24	3.18	0.33	5.1	5.1	3.7	N/A	Nov 2015	Dec 2016
+Fedora 24	4.5	2.23	2.48	2.24	3.20	0.34	6.1	6.1	3.8	N/A	Jun 2016	Aug 2017
+Fedora 25	4.8	2.24	2.50	2.24	3.22.2	0.34	6.2	6.2	3.8	N/A	Nov 2016	Dec 2017
+Fedora 26	4.11	2.25	2.52	2.24	3.22.16	0.34	7.1	7.1	4.0	N/A	Jul 2017	Jun 2018
+Fedora 27	4.13	2.26	2.54	2.24	3.22.24	0.34	7.2	7.2	4.0	N/A	Nov 2017	Dec 2018
+Fedora 28	4.16	2.27	2.56	2.24	3.22.30	0.34	8.0.1	8.0.1	6.0	N/A	May 2018	May 2019
+Fedora 29	4.18	2.28	2.58	2.24	3.24.1	0.34	8.2.1	8.2.1	7.0	3.7	Oct 2018	Nov 2019
+Fedora 30	5.0	2.29	2.60	2.24	3.24.8	0.34	9.0.1	9.0.1	8.0	3.7	Apr 2019	?
+Fedora 31	5.3	2.30	2.62	2.24	3.24.12	0.34	9.2.1	9.2.1	9.0	3.7	Oct 2019	?
+Fedora 32	5.6	2.31	2.64	2.24	3.24.18	0.34	10.0.1	10.0.1	10.0	3.8	Apr 2020	?
+RHEL 6	2.6.32	2.12	2.28	2.24	N/A	0.32	4.4	4.4	3.4	N/A	Nov 2010	Nov 2020
+RHEL 7	3.10	2.17	2.42	2.24	3.14	0.32	4.8.5	4.8	3.4	N/A	Jun 2014	Jun 2024
+RHEL 8	4.18	2.28	2.56	2.24	3.22.30	0.36	8.3.1	8.3.1	8.0	3.6	May 2019	May 2031
+openSUSE 11.4	2.6.37	2.11	2.28	2.22	3.0	0.20	4.5	4.5	N/A	N/A	Mar 2011	Jul 2015
+openSUSE 12.1	3.1	2.14	2.30	2.24	3.2	0.22	4.6	4.6	2.9	N/A	Nov 2011	May 2013
+openSUSE 12.2	3.4	2.15	2.32	2.24	3.4	0.24	4.7	4.7	3.1	N/A	Jul 2012	Jan 2014
+openSUSE 12.3	3.7	2.17	2.34	2.24	3.6	0.28	4.7	4.7	3.2	N/A	Mar 2013	Sep 2014
+openSUSE 13.1	3.11	2.18	2.38	2.24	3.10	0.30	4.8.1	4.8	3.3	N/A	Nov 2013	Jan 2016
+openSUSE 13.2	3.16	2.19	2.42	2.24	3.14	0.32	4.8.3	4.8, 4.9	3.5	N/A	Nov 2014	Jan 2017
+openSUSE Leap 15.0	4.12	2.26	2.54	2.24	3.22	0.34	7.3	7.3	5.0	3.6	May 2018	Nov 2019
+openSUSE Leap 15.1	4.12	2.26	2.54	2.24	3.22	0.34	8.2	7.4, 8.2	5.0, 7.0	3.6	May 2019	Nov 2020
+openSUSE Leap 42.1	4.1	2.19	2.44	2.24	3.16	0.32	5.2	4.8, 5.2	3.7	3.4	Nov 2015	May 2017
+openSUSE Leap 42.2	4.4	2.22	2.48	2.24	3.20	0.34	5.3	4.8, 5.3, 6.1	3.8	3.4	Nov 2016	Jan 2018
+openSUSE Leap 42.3	4.4	2.22	2.48	2.24	3.20	0.34	7.1	4.8, 5.3, 6.2, 7.1	3.8	3.4	Jul 2017	Jun 2019
+Debian 10	4.19	2.28	2.58	2.24	3.24	0.36	8.3	8.3	6.0, 7.0	3.7	Jul 2019	Jun 2023 / Jun 2025 (LTS)
+Debian 6	2.6.32	2.11	2.24	2.20	N/A	0.16	4.4	4.1, 4.3, 4.4	2.7	3.1	Feb 2011	May 2014 / Feb 2016 (LTS)
+Debian 7	3.2	2.13	2.32	2.24	3.4	0.26	4.7	4.4, 4.6, 4.7	3.0	3.2	May 2013	Apr 2016 / May 2018 (LTS)
+Debian 8	3.16	2.19	2.42	2.24	3.14	0.32	4.9	4.8, 4.9	3.4, 3.5, 4.0	3.4	Apr 2015	Jun 2018 / Jun 2020 (LTS)
+Debian 9	4.9	2.24	2.50	2.24	3.22	0.34	6.3	6.3	3.8, 3.9, 4.0	3.5	Jun 2017	Jun 2020 / Jun 2022 (LTS)
+Ubuntu 12.04 LTS	3.2	2.15	2.32	2.24	3.4	0.30	4.6	4.4, 4.5, 4.6	3.0	N/A	Apr 2012	Apr 2017
+Ubuntu 14.04 LTS	3.13	2.19	2.40	2.24	3.10	0.30	4.8.2	4.4, 4.6, 4.7, 4.8	3.3, 3.4, 3.5, 3.6, 3.8, 3.9	N/A	Apr 2014	Apr 2019
+Ubuntu 16.04 LTS	4.4	2.23	2.48	2.24	3.18	0.33	5.3	4.7, 4.8, 4.9, 5.3	3.5, 3.6, 3.7, 3.8, 3.9, 4.0	3.5	Apr 2016	Apr 2024
+Ubuntu 18.04 LTS	4.15	2.27	2.56	2.24	3.22.30	0.34	8-20180414	7.3	3.9, 4.0, 5.0, 6.0	3.6	Apr 2018	Apr 2023 / Apr 2028 (LTS)
+Ubuntu 20.04 LTS	5.3	2.31	2.64	2.24	3.24.18	0.38	10-20200411	9.3.0	6.0, 7.0, 8.0, 9.0, 10.0	3.8	Apr 2020	Apr 2025 / Apr 2030 (LTS)
+SUSE SLE-11-SP4	3.0	2.11	2.22	2.18	N/A	0.24	4.8.3	4.3, 5.3	3.1	N/A	Mar 2009	Mar 2019 / Mar 2022 (LTS)
+SUSE SLE-12 GA	3.12	2.19	2.38	N/A	N/A	0.32	4.8.3	4.8	3.4	3.4	Oct 2014	Jun 2016 / Jul 2019 (LTS)
+SUSE SLE-12-SP1	3.12	2.19	2.38	2.24	3.10	0.32	5.2	4.8, 5.3, 6.2, 7.4, 8.2, 9.2	3.4	3.4	Dec 2015	May 2017 / May 2020 (LTS)
+SUSE SLE-12-SP2	4.4	2.22	2.48	2.24	3.20	0.34	6.2	4.8, 5.3, 6.2, 7.4, 8.2, 9.2	3.8	3.4	Nov 2016	May 2018 / Mar 2021 (LTS)
+SUSE SLE-12-SP3	4.4	2.22	2.48	2.24	3.20	0.34	6.2	4.8, 5.3, 6.2, 7.4, 8.2, 9.2	3.8	3.4	Sep 2019	Jul 2019 / Jun 2022 (LTS)
+SUSE SLE-12-SP4	4.12	2.22	2.48	2.24	3.20	0.34	8.2	4.8, 5.3, 6.2, 7.4, 8.2, 9.2	6.0	3.4	Dec 2018	Jul 2020 / Jun 2023 (LTS)
+SUSE SLE-12-SP5	4.12	2.22	2.48	2.24	3.20	0.34	8.2	4.8, 5.3, 6.2, 7.4, 8.2, 9.2	6.0, 7.0	3.4	Dec 2019	Oct 2024 / Oct 2027 (LTS)
+SUSE SLE-15	4.12	2.26	2.54	2.24	3.22	0.34	7.3	7.5, 8.2, 9.2	5.0	3.6	Jul 2018	Dec 2019 / Dec 2022 (LTS)
+SUSE SLE-15-SP1	4.12	2.26	2.54	2.24	3.22	0.34	8.2	7.5, 8.2, 9.2	5.0, 7.0	3.6	Jun 2019	?
+Distribution	kernel	glibc	glib	gtk+2	gtk+3	pixman	stdc++	GCC	clang	python3	Released	EOL
+Notes
+
+Red backgrounds denote lack of compatibility with current versions of Firefox. In the EOL column, they denote distribution versions past their End of Life.
+
+Yellow backgrounds denote compatibility with ESR78
+
+Green backgrounds denote compatibility with the current release (as of writing, 78)
+
+Greener backgrounds denote compatibility with the current mozilla-central (as of writing, 80).
+
+The table is generated with the script and data in https://github.com/glandium/firefox-linux-compat-matrix
+
+1 ===============================================================================================================
+clang: warning: argument unused during compilation: '-no-pie' [-Wunused-command-line-argument]
+Undefined symbols for architecture x86_64:
+  "ix86_binary_operator_ok(rtx_code, machine_mode, rtx_def**)", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "optimize_function_for_size_p(function*)", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_cfun", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_const_tiny_rtx", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_epilogue_completed", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_flag_cf_protection", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_flag_excess_precision", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_flag_finite_math_only", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_flag_fp_int_builtin_inexact", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_flag_peephole2", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_flag_pic", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_flag_rounding_math", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_flag_trapping_math", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_flag_unsafe_math_optimizations", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_insn", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_ix86_arch_features", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_ix86_cmodel", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_ix86_fpmath", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_ix86_isa_flags", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_ix86_isa_flags2", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_ix86_pmode", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_ix86_tls_dialect", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_ix86_tune_features", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_operands", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_optimize", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_reload_completed", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_reload_in_progress", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_rtx_class", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_target_flags", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+  "_x86_prefetch_sse", referenced from:
+      ___cxx_global_var_init.100 in gencondmd.o
+    ld: symbol(s) not found for architecture x86_64
+    clang: error: linker command failed with exit code 1 (use -v to see invocation)
+    make[3]: *** [build/gencondmd] Error 1
+================================================================================================================
+    https://gcc.gnu.org/bugzilla/show_bug.cgi?id=92061#c5
+================================================================================================================
+    We can certainly workaround it, like:
+--- gcc/genconditions.c	2019-01-01 12:37:19.064943662 +0100
++++ gcc/genconditions.c	2019-10-11 10:57:11.464595789 +0200
+@@ -57,8 +57,9 @@ write_header (void)
+ \n\
+ /* It is necessary, but not entirely safe, to include the headers below\n\
+    in a generator program.  As a defensive measure, don't do so when the\n\
+-   table isn't going to have anything in it.  */\n\
+-#if GCC_VERSION >= 3001\n\
++   table isn't going to have anything in it.\n\
++   Clang 9 is buggy and doesn't handle __builtin_constant_p correctly.  */\n\
++#if GCC_VERSION >= 3001 && __clang_major__ < 9\n\
+ \n\
+ /* Do not allow checking to confuse the issue.  */\n\
+ #undef CHECKING_P\n\
+@@ -170,7 +171,7 @@ struct c_test\n\
+    vary at run time.  It works in 3.0.1 and later; 3.0 only when not\n\
+    optimizing.  */\n\
+ \n\
+-#if GCC_VERSION >= 3001\n\
++#if GCC_VERSION >= 3001 && __clang_major__ < 9\n\
+ static const struct c_test insn_conditions[] = {\n");
+ 
+   traverse_c_tests (write_one_condition, 0);
+@@ -191,7 +192,7 @@ write_writer (void)
+ 	"  unsigned int i;\n"
+         "  const char *p;\n"
+         "  puts (\"(define_conditions [\");\n"
+-	"#if GCC_VERSION >= 3001\n"
++	"#if GCC_VERSION >= 3001 && __clang_major__ < 9\n"
+ 	"  for (i = 0; i < ARRAY_SIZE (insn_conditions); i++)\n"
+ 	"    {\n"
+ 	"      printf (\"  (%d \\\"\", insn_conditions[i].value);\n"
+================================================================================================================
+but guess it would be better if somebody reports that to LLVM bugzilla first and see if they are willing to fix.
+
+
+2 ===============================================================================================================
+    Undefined symbols for architecture arm64:
+    "_host_hooks", referenced from:
+    c_common_no_more_pch) in c-pch.o toplev: :main(int, char**) in libbackend.a (toplev.o)
+    gt_pch_save (__SFILE*) in libbackend. a (ggc-common.o)
+    §t_pch_restore(__SFILE*) in libbackend. a (ggc-common. o)
+    ld: symbol (s) not found for architecture arm64
+    clang: error: linker command failed with exit code 1 (use -v to see invocation)
+================================================================================================================
+https://github.com/riscv-collab/riscv-gnu-toolchain/issues/800#issuecomment-808722775
+================================================================================================================
+diff -Naur gcc-10.2.0/gcc/config/host-darwin.c gcc-10.2.0.new/gcc/config/host-darwin.c
+--- gcc-10.2.0/gcc/config/host-darwin.c 2020-07-23 01:35:17.000000000 -0500
++++ gcc-10.2.0.new/gcc/config/host-darwin.c 2021-03-07 19:58:50.000000000 -0600
+@@ -22,6 +22,8 @@
+#include "coretypes.h"
+#include "diagnostic-core.h"
+#include "config/host-darwin.h"
++#include "hosthooks.h"
++#include "hosthooks-def.h"
+
+/* Yes, this is really supposed to work. /
+static char pch_address_space[10241024*1024] attribute((aligned (4096)));
+@@ -75,3 +77,5 @@
+
+return ret;
+}
++const struct host_hooks host_hooks = HOST_HOOKS_INITIALIZER;
++
+================================================================================================================
+
+3 ===============================================================================================================
+error: no member named 'fancy_abort' in namespace 'std::__1'; did you mean
+  simply 'fancy_abort'?
+        _VSTD::abort();
+        ^~~~~~~
+================================================================================================================
+  https://gcc.gnu.org/legacy-ml/gcc-bugs/2017-09/msg00154.html
+================================================================================================================
+diff -pur a/gcc/system.h b/gcc/system.h
+--- a/gcc/system.h	2015-01-05 13:33:28.000000000 +0100
++++ b/gcc/system.h	2017-09-03 18:28:15.000000000 +0200
+@@ -216,6 +216,7 @@ extern int errno;
+ 
+ #ifdef __cplusplus
+ # include <algorithm>
++# include <map>
+ # include <cstring>
+ # include <utility>
+ #endif
+================================================================================================================
+
+4 ===============================================================================================================
+   glibc-2.28/sunrpc/rpc_main.c
+
+   Building for multilib 1/1: ''
+[EXTRA]      Configuring C library
+[EXTRA]      Building C library
+[ERROR]      rpc_main.c:329:17: error: variable has incomplete type 'struct stat64'
+[ERROR]      rpc_main.c:331:7: error: call to undeclared function 'stat64'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+[ERROR]      rpc_main.c:1117:17: error: variable has incomplete type 'struct stat64'
+[ERROR]      rpc_main.c:1120:9: error: call to undeclared function 'stat64'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+[ERROR]      make[4]: *** [Makefile:174: /Volumes/DtDeSSD/host_macos_aarch64/arm_gcc8_build/.build/aarch64-unknown-linux-gnu/build/build-libc/multilib/sunrpc/cross-rpc_main.o] Error 1
+================================================================================================================
+   apple does obsolete stat64 instead of stat
+   https://trac.macports.org/ticket/62853
+   https://github.com/stenzek/duckstation/commit/152ccd591722369aaad2785083fb2ab789effbbe
+   https://github.com/nxp-imx/mfgtools/issues/274
+================================================================================================================
+    57 #define EXTEND	1		/* alias for TRUE */
+    58 #define DONT_EXTEND	0	/* alias for FALSE */
+    +
+    +#if defined (__HAIKU__) || defined (__APPLE__)
+    +#define ftat64 fstat
+    +#define lstat64 lstat
+    +#define stat64 stat
+    +#endif
+================================================================================================================
+
+5 ===============================================================================================================
+Undefined symbols for architecture arm64:
+  "host_detect_local_cpu(int, char const**)", referenced from:
+      static_spec_functions in gcc.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cpp] Error 1
+================================================================================================================
+        https://github.com/richfelker/musl-cross-make/issues/116
+        patches for building gcc on Apple Silicon #129
+        https://github.com/richard-vd/musl-cross-make/commit/b298706d99a30c72c26ba82c46b5bbd8550f5296?diff=unified
+        ***** https://github.com/richfelker/musl-cross-make/pull/129/files *****
+
+6 ===============================================================================================================
+Undefined symbols for architecture arm64:
+  "_host_hooks", referenced from:
+      c_common_no_more_pch() in c-pch.o
+      toplev::main(int, char**) in libbackend.a(toplev.o)
+      gt_pch_save(__sFILE*) in libbackend.a(ggc-common.o)
+      gt_pch_restore(__sFILE*) in libbackend.a(ggc-common.o)
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+================================================================================================================
+same as [5]
+
+        Attached is the patch I use for my toolchain ( I'm switching over to using this project rather than my own but not there yet ).
+
+        diff -Naur gcc-10.2.0/gcc/config/host-darwin.c gcc-10.2.0.new/gcc/config/host-darwin.c
+        --- gcc-10.2.0/gcc/config/host-darwin.c 2020-07-23 01:35:17.000000000 -0500
+        +++ gcc-10.2.0.new/gcc/config/host-darwin.c 2021-03-07 19:58:50.000000000 -0600
+        @@ -22,6 +22,8 @@
+        #include "coretypes.h"
+        #include "diagnostic-core.h"
+        #include "config/host-darwin.h"
+        +#include "hosthooks.h"
+        +#include "hosthooks-def.h"
+
+        /* Yes, this is really supposed to work. /
+        static char pch_address_space[10241024*1024] attribute((aligned (4096)));
+        @@ -75,3 +77,5 @@
+
+        return ret;
+        }
+        +const struct host_hooks host_hooks = HOST_HOOKS_INITIALIZER;
+        +
+
+7 ===============================================================================================================
+libatomic selected processor does not support swpxxxx
+================================================================================================================
+libatomic/Makefile.am: IFUNC_OPTIONS	     = -march=armv8.1-a
+libatomic/Makefile.in: @ARCH_AARCH64_LINUX_TRUE@@HAVE_IFUNC_TRUE@IFUNC_OPTIONS = -march=armv8.1-a
+
+8 ===============================================================================================================
+gettext/libtextstyle/lib/obstack.c:351:31: error: incompatible function pointer types initializing 'void (*)(void) __attribute__((noreturn))' with an expression of type 'void (void)' [-Wincompatible-function-pointer-types]
+================================================================================================================
+    https://git.savannah.gnu.org/cgit/gnulib.git/commit/lib/obstack.c?id=0cc39712803ade7b2d4b89c36b143dad72404063
+
+    obstack: Fix a clang warning.
+* lib/obstack.c (print_and_abort): Mark as __attribute_noreturn__.
+Diffstat (limited to 'lib/obstack.c')
+-rw-r--r--	lib/obstack.c	2	
+1 files changed, 1 insertions, 1 deletions
+diff --git a/lib/obstack.c b/lib/obstack.c
+index 6e82da0..e6475a2 100644
+--- a/lib/obstack.c
++++ b/lib/obstack.c
+@@ -326,7 +326,7 @@ int obstack_exit_failure = EXIT_FAILURE;
+ #   include <libio/iolibio.h>
+ #  endif
+-static _Noreturn void
++static __attribute_noreturn__ void
+ print_and_abort (void)
+ {
+   /* Don't change any of these strings.  Yes, it would be possible to add
+
+9  ===============================================================================================================
+https://gcc.gnu.org/bugzilla/show_bug.cgi?id=111632
+As reported in https://bugs.freebsd.org/274041 and a number of related PRs, when building gcc's C++ sources against recent libc++ (>= 17), the poisoning of the ctype macros due to including safe-ctype.h before including C++ standard headers such as <list>, <map>, etc, causes many compilation errors, similar to:
+
+  In file included from /home/dim/src/gcc/master/gcc/gensupport.cc:23:
+  In file included from /home/dim/src/gcc/master/gcc/system.h:233:
+  In file included from /usr/include/c++/v1/vector:321:
+  In file included from /usr/include/c++/v1/__format/formatter_bool.h:20:
+  In file included from /usr/include/c++/v1/__format/formatter_integral.h:32:
+  In file included from /usr/include/c++/v1/locale:202:
+  /usr/include/c++/v1/__locale:546:5: error: '__abi_tag__' attribute only applies to structs, variables, functions, and namespaces
+===============================================================================================================
+https://gcc.gnu.org/git/gitweb.cgi?p=gcc.git;h=e95ab9e60ce1d9aa7751d79291133fd5af9209d7
+
+
+
+
