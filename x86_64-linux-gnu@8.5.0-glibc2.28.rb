@@ -19,7 +19,7 @@ class X8664LinuxGnuAT850Glibc228 < Formula
         depends_on CpuRequirement
     end
   
-    url "https://github.com/meowlgmee/homebrew-macos-cross-toolchains/releases/download/v8.5.0-glibc2.28/x86_64-linux-gnu-aarch64-darwin.tar.gz"
+    url "https://github.com/meowlgmee/homebrew-macos-cross-toolchains/releases/download/v8.5.0-glibc2.28-x86_64/x86_64-linux-gnu-aarch64-darwin.tar.gz"
     sha256 "a069c11ab31bbce83f78c4a5bf4a4c7f501e3e875e321abe90443df9035beac3"
   
     def install
