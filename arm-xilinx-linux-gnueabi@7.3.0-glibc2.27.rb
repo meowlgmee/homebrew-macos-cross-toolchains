@@ -8,7 +8,7 @@ class CpuRequirement < Requirement
     end
   end
 
-class ArmLinuxGnueabiAT730Glibc227 < Formula
+class ArmXilinxLinuxGnueabiAT730Glibc227 < Formula
     desc "aarch64 Linux GNU Toolchain"
     homepage "https://github.com/meowlgmee/homebrew-macos-cross-toolchains"
     license "GPL-3.0-or-later" => { with: "GCC-exception-3.1" }
@@ -19,7 +19,7 @@ class ArmLinuxGnueabiAT730Glibc227 < Formula
         depends_on CpuRequirement
     end
   
-    url "https://github.com/meowlgmee/homebrew-macos-cross-toolchains/releases/download/v7.3.0-glibc2.27-armv7/arm-linux-gnueabi-v7.3.0-host-aarch64-darwin.tar.gz"
+    url "https://github.com/meowlgmee/homebrew-macos-cross-toolchains/releases/download/v7.3.0-glibc2.27-armv7/arm-xilinx-linux-gnueabi-v7.3.0-host-aarch64-darwin.tar.gz"
     sha256 "f9c22f053e8e353a1e6d823f674015beb54063087b79f0e2c0f5e85e91331574"
   
     def install
