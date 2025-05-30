@@ -8,7 +8,7 @@ class CpuRequirement < Requirement
     end
   end
 
-class ArmLinuxGnueabiAT730Glibc217 < Formula
+class ArmLinuxGnueabiAT730Glibc227 < Formula
     desc "aarch64 Linux GNU Toolchain"
     homepage "https://github.com/meowlgmee/homebrew-macos-cross-toolchains"
     license "GPL-3.0-or-later" => { with: "GCC-exception-3.1" }
